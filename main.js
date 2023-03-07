@@ -5,5 +5,5 @@ console.log(parrafo
     )
 //3.Método endsWith
 console.log(parrafo.endsWith("("));
-console.log(parrafo.endsWithsWith("s"));
+console.log(parrafo.endsWith("s"));
 
