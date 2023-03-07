@@ -1,9 +1,9 @@
 //METODOS DE STRINGS
-let parrafo="Un hamburguesa huernafa, es una hamburguesa sin papas :(";
+let parrafo="Un hamburguesa huerfana, es una hamburguesa sin papas :(";
 document.querySelector('body').textContent=parrafo
 console.log(parrafo
     )
-//3.Método endsWith
-console.log(parrafo.endsWith("("));
-console.log(parrafo.endsWith("s"));
+//4.Método replace
+console.log(parrafo.replace("hamburguesa","sandwich"));
+console.log(parrafo.replace("huerfana", "desamparada"));
 
