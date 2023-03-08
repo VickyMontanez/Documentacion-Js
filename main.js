@@ -1,9 +1,10 @@
 //METODOS DE STRINGS
 let index="And a Helter Skelter 'round her little finger and I ride it endlessly";
-let ejemplo="Ballena Azul"
-//17. Método search
-console.log(ejemplo);
-console.log(`Con el método '.search' puedo encontrar el indice de la letra B = `+(ejemplo.search("B")));
-console.log(`Con el método '.search' puedo encontrar el indice de la letra A = `+(ejemplo.search("A")));
-console.log(`Con el método '.search' puedo encontrar el indice de la letra z = `+(ejemplo.search("z")));
+let ejemplo="BALLENA Azul";
+let ejemplo2="MORAT";
 
+//18. Método toLowerCase
+console.log(ejemplo);
+console.log(ejemplo.toLowerCase());
+console.log(ejemplo2);
+console.log(ejemplo2.toLowerCase())
