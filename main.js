@@ -1,10 +1,10 @@
 //METODOS DE STRINGS
 let index="And a Helter Skelter 'round her little finger and I ride it endlessly";
-let ejemplo="BALLENA Azul";
-let ejemplo2="MORAT";
+let ejemplo="ballena Azul";
+let ejemplo2="morat";
 
-//18. Método toLowerCase
+//19. Método toUpperCase
 console.log(ejemplo);
-console.log(ejemplo.toLowerCase());
+console.log(ejemplo.toUpperCase());
 console.log(ejemplo2);
-console.log(ejemplo2.toLowerCase())
+console.log(ejemplo2.toUpperCase())
