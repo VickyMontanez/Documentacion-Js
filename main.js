@@ -1,8 +1,7 @@
 //METODOS DE STRINGS
-let str1="      Compra   "
-let str2="               socio"
-//23. Método trim
-console.log(str1);
-console.log(str2);
-console.log(str1.trim());
-console.log(str2.trim());
+
+//25. Método localCompare
+console.log('10'.localeCompare('2', undefined, { numeric: true }));
+console.log('2'.localeCompare('10', undefined, { numeric: true }));
+console.log('10'.localeCompare('10', undefined, { numeric: true }));
+console.log('2'.localeCompare('2', undefined, { numeric: true }));
