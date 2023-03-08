@@ -1,10 +1,16 @@
 //METODOS DE STRINGS
-let index="And a Helter Skelter 'round her little finger and I ride it endlessly";
-let ejemplo="ballena Azul";
-let ejemplo2="morat";
+let str1="ABCDEJGHIabcdefghji";
+let str2="Edificio Zona franca";
+let str3="GATICOS EN aDOPCIÓN";
 
-//19. Método toUpperCase
-console.log(ejemplo);
-console.log(ejemplo.toUpperCase());
-console.log(ejemplo2);
-console.log(ejemplo2.toUpperCase())
+//20. Método match
+let regexp=/[A-C]/gi;
+let match = str1.match(regexp);
+let regexp2=/[A-Z]/g;
+let match2= str2.match(regexp2);
+let regexp3=/([a-z])/g;
+let match3= str3.match(regexp3);
+
+console.log(match);
+console.log(match2);
+console.log(match3);
