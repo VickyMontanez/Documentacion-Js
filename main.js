@@ -1,8 +1,8 @@
 //METODOS DE STRINGS
-
-//21 Método matchAll
-
-const regexp = RegExp('foo[a-z]*','g');
-const cadena = 'mesa football, football';
-const ocurrencias = cadena.matchAll(regexp);
-console.log(Array.from(cadena.matchAll(regexp), m => m[0]));
+let str1="Compra Moto"
+let str2="Motomami Motomami"
+//22. Método substr
+console.log(str1);
+console.log(str2);
+console.log(str1.substr(3));
+console.log(str2.substr(5));
