@@ -1,14 +1,11 @@
 //METODOS DE STRINGS
-let parrafo="And it's the thousandth time that's it's even bolder, Don't be surprised when you get bent over, They told ya, but you were dying for it";
+let parrafo="Arabella's got some interstellar-gator skin boots";
 document.querySelector('body').textContent=parrafo;
 console.log(parrafo);
-let index="ABC";
-console.log(`Esta es una cadena creada por un 'let' `+index)
-//13.Método fromCharCode
-console.log(String.fromCharCode(65,66,67)+` Esta es una cadena creada por el método '.fromCharCode`)
-console.log(String.fromCharCode(67,65,77,80,85,83))
-console.log(String.fromCharCode(83,80,85,84,78,73,75))
+let index="And a Helter Skelter 'round her little finger and I ride it endlessly";
 
-
-
-
+//14. Método concat
+let str1="primer string";
+let str2="segundo string"
+console.log(parrafo.concat(" "+ index))
+console.log(str1.concat(" se puede concatenar con "+ str2))
