@@ -64,3 +64,6 @@ console.log("8.OPERADOR NO IDENTICO");
 console.log('d = "gatos"');
 console.log('e = 65');
 console.log("d !== e : ", d!==e);
+console.log('a = 5');
+console.log('b = 5');
+console.log("a !== b : ", a!==b);
