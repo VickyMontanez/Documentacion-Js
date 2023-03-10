@@ -1,10 +1,13 @@
 //METODOS MATH
-let a = -87654;
-let g = -78;
-let e = 764;
-let b = 43;
-console.log("Math.abs devuelve el valor absoluto de una variable");
-console.log("a =",a," Math.abs(a)=",Math.abs(a));
-console.log("b =",b," Math.abs(b)=",Math.abs(b));
-console.log("e =",e," Math.abs(e)=",Math.abs(e));
-console.log("g =",g," Math.abs(g)=",Math.abs(g));
+let a = Math.exp(0);
+let b = Math.exp(1);
+let c = Math.exp(2);
+let d = Math.exp(-1);
+let e = Math.exp(-2);
+
+console.log("El método 'Math.exp()' permite darle valor de Euler potenciado a un numero a una variable ej:");
+console.log("La variable 'a' tiene un valor de Euler potenciado a la 0 : (Math.exp(0)) =", a);
+console.log("La variable 'b' tiene un valor de Euler potenciado a la 1 : (Math.exp(1)) =", b);
+console.log("La variable 'c' tiene un valor de Euler potenciado a la 2 : (Math.exp(2)) =", c);
+console.log("La variable 'd' tiene un valor de Euler potenciado a la -1 : (Math.exp(-1)) =", d);
+console.log("La variable 'e' tiene un valor de Euler potenciado a la -2 : (Math.exp(-2)) =", e);
