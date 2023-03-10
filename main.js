@@ -1,13 +1,12 @@
 //METODOS MATH
-let a = Math.exp(0);
-let b = Math.exp(1);
-let c = Math.exp(2);
-let d = Math.exp(-1);
-let e = Math.exp(-2);
+let value1 = Math.log(1);
+let value2 = Math.log(10);
+let value3 = Math.log(8); 
 
-console.log("El método 'Math.exp()' permite darle valor de Euler potenciado a un numero a una variable ej:");
-console.log("La variable 'a' tiene un valor de Euler potenciado a la 0 : (Math.exp(0)) =", a);
-console.log("La variable 'b' tiene un valor de Euler potenciado a la 1 : (Math.exp(1)) =", b);
-console.log("La variable 'c' tiene un valor de Euler potenciado a la 2 : (Math.exp(2)) =", c);
-console.log("La variable 'd' tiene un valor de Euler potenciado a la -1 : (Math.exp(-1)) =", d);
-console.log("La variable 'e' tiene un valor de Euler potenciado a la -2 : (Math.exp(-2)) =", e);
+console.log("Con el metodo 'Math.log' puedo encontrar el exponente de mi logaritmo base 'e' según el resultado, ej:");
+console.log("Encontrar el exponente de mi logaritmo base 'e', si su resultado es 1"); 
+console.log("El exponente de mi log 'e' es: Math.log(1) = ",value1,);
+console.log("Encontrar el exponente de mi logaritmo base 'e', si su resultado es 10"); 
+console.log("El exponente de mi log 'e' es: Math.log(10) = ",value2,);
+console.log("Encontrar el exponente de mi logaritmo base 'e', si su resultado es 8"); 
+console.log("El exponente de mi log 'e' es: Math.log(8) = ",value3,);
