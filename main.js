@@ -1,44 +1,27 @@
 /* INFIERNO DE CALLBACKS */
 
-/* Función Callback
+/* Callback VS Promises */
 
-Una función de callback es una función que se pasa a otra función como un argumento, que luego se invoca dentro de la función externa para completar algún tipo de rutina o acción. */
+/* 1. Una Función puede ser tomada como parametro*/
+/* EXAMPLES */
 
-/* PRIMER EJEMPLO: */
-
-let fa = function(){
-    return `Hola soy la función A`;
+const operation = (num1, num2, callback)=>{
+    return callback(num1, num2)
 };
+/* Se pasa por parametro la operación que se va hacer*/
+/* EL return es un CALLBACK porque vuelve a llamr el mismo parametro */
 
-/* Se inicia con una función expresiva {fa}: la
-que retorna un string;*/
+console.log(operation(5,9,(a,b)=>a+b));
+console.log(operation(5,9,(a,b)=>a*b));
+console.log(operation(5,9,(a,b)=>a-b));
 
-let fb = callback =>{
-    console.log("Hola soy la función B");
-    return callback();
-};
+/* Se pasa la función */
 
-/* Se relaciona con otra función expresiva {fb}: la que retorna un nuevo string y luego hace un CALLBACK a la función anterior que retorna el primer string;*/
+let suma= (num1, num2, num3, add)=>{
+    return add(num1, num2, num3)
+}
 
-console.log(fb(fa));
+console.log(suma(5,9,3,(a,b,c)=>a+b+c));
+console.log(suma(7,7,1,(a,b,c)=>a*b*c));
+console.log(suma(9,4,3,(a,b,c)=>a-b-c));
 
-/* SEGUNDO EJEMPLO: */
-
-function saludar(nombre) {
-    alert('Hola ' + nombre);
-    alert("Ahora mira consola :)")
-    console.log('Hola ' + nombre);
-  }
-  
-  function procesarEntradaUsuario(callback) {
-    var nombre = prompt('Por favor ingresa tu nombre.');
-    callback(nombre);
-  }
-  
-  procesarEntradaUsuario(saludar);
-  
-  /* Se inicia con una función {saludar}:
-  en la que se toma un parametro "nombre" y coloca la dat en la alerta y la consola;
-
-  Esto se relaciona con la función {procesarEntradaUsuario}:
-  en la que me dan un prompt para entrar data y luego hace un CALLBACK a la función anterior para que se ejecute, DESPUÉS de esta*/
